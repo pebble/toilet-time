@@ -1,0 +1,66 @@
+<html>
+  <head>
+     <meta name="viewport" content="width=device-width">
+    <script src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <style>
+      * {
+        margin:0;
+        padding:0;
+      }
+      h1 {
+        background:#000;
+        color:#FFF;
+        display:block;
+        position:absolute;
+        top:0px;
+        left:0px;
+        right:0px;
+        height:50px;
+        line-height:50px;
+        text-align:center;
+      }
+      #status {
+        display:block;
+        position:absolute;
+        top:50px;
+        left:0px;
+        right:0px;
+        bottom:0px;
+        line-height:50px;
+        text-align:center;
+      }
+      #status.locked{
+        background: url('http://findicons.com/icon/download/440814/lock/128/png') center no-repeat;
+      }
+      #status.unlocked{
+        background: url('http://findicons.com/icon/download/440713/unlock/128/png') center no-repeat;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1>Bathroom Status</h1>
+    <div id="status"></div>
+    <script type="text/javascript">
+      function connect(){
+        sock = new SockJS('http://'+document.domain+':'+location.port+'/ws');
+        sock.onopen = function() {
+          console.log('connected');
+        };
+        sock.onmessage = function(msg) {
+          var data = JSON.parse(msg.data)
+          if (data.locked){
+            document.querySelector('#status').className = 'locked';
+          } else {
+            document.querySelector('#status').className = 'unlocked';
+          };
+        };
+        sock.onclose = function() {
+          console.log('disconnected');
+          setTimeout(function(){connect();},1000);
+        };
+      }
+      connect();
+    </script>
+  </body>
+</html>
