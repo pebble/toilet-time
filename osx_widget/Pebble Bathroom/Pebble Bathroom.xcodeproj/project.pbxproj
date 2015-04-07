@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ED115771AD33CD7005A149D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED115761AD33CD7005A149D /* AppDelegate.swift */; };
+		0ED115791AD33CD7005A149D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED115781AD33CD7005A149D /* Images.xcassets */; };
+		0ED115881AD33CD7005A149D /* Pebble_BathroomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED115871AD33CD7005A149D /* Pebble_BathroomTests.swift */; };
+		0ED115941AD3413E005A149D /* bathroom-occupied@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED115921AD3413E005A149D /* bathroom-occupied@2x.png */; };
+		0ED115951AD3413E005A149D /* bathroom-vacant@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED115931AD3413E005A149D /* bathroom-vacant@2x.png */; };
+		0ED115971AD355FD005A149D /* bathroom-unknown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ED115961AD355FD005A149D /* bathroom-unknown@2x.png */; };
+		0ED115991AD3C346005A149D /* DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED115981AD3C346005A149D /* DropdownMenu.swift */; };
+		0ED1159B1AD3CD55005A149D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0ED1159A1AD3CD55005A149D /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0ED115821AD33CD7005A149D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ED115691AD33CD7005A149D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ED115701AD33CD7005A149D;
+			remoteInfo = "Pebble Bathroom";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0ED115711AD33CD7005A149D /* Pebble Bathroom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pebble Bathroom.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED115751AD33CD7005A149D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED115761AD33CD7005A149D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0ED115781AD33CD7005A149D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0ED115811AD33CD7005A149D /* Pebble BathroomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pebble BathroomTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ED115861AD33CD7005A149D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ED115871AD33CD7005A149D /* Pebble_BathroomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pebble_BathroomTests.swift; sourceTree = "<group>"; };
+		0ED115921AD3413E005A149D /* bathroom-occupied@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bathroom-occupied@2x.png"; sourceTree = "<group>"; };
+		0ED115931AD3413E005A149D /* bathroom-vacant@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bathroom-vacant@2x.png"; sourceTree = "<group>"; };
+		0ED115961AD355FD005A149D /* bathroom-unknown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bathroom-unknown@2x.png"; sourceTree = "<group>"; };
+		0ED115981AD3C346005A149D /* DropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenu.swift; sourceTree = "<group>"; };
+		0ED1159A1AD3CD55005A149D /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ED1156E1AD33CD7005A149D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED1157E1AD33CD7005A149D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ED115681AD33CD7005A149D = {
+			isa = PBXGroup;
+			children = (
+				0ED115731AD33CD7005A149D /* Pebble Bathroom */,
+				0ED115841AD33CD7005A149D /* Pebble BathroomTests */,
+				0ED115721AD33CD7005A149D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ED115721AD33CD7005A149D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ED115711AD33CD7005A149D /* Pebble Bathroom.app */,
+				0ED115811AD33CD7005A149D /* Pebble BathroomTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ED115731AD33CD7005A149D /* Pebble Bathroom */ = {
+			isa = PBXGroup;
+			children = (
+				0ED115761AD33CD7005A149D /* AppDelegate.swift */,
+				0ED115981AD3C346005A149D /* DropdownMenu.swift */,
+				0ED115741AD33CD7005A149D /* Supporting Files */,
+			);
+			path = "Pebble Bathroom";
+			sourceTree = "<group>";
+		};
+		0ED115741AD33CD7005A149D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ED1159A1AD3CD55005A149D /* MainMenu.xib */,
+				0ED115781AD33CD7005A149D /* Images.xcassets */,
+				0ED115921AD3413E005A149D /* bathroom-occupied@2x.png */,
+				0ED115931AD3413E005A149D /* bathroom-vacant@2x.png */,
+				0ED115961AD355FD005A149D /* bathroom-unknown@2x.png */,
+				0ED115751AD33CD7005A149D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ED115841AD33CD7005A149D /* Pebble BathroomTests */ = {
+			isa = PBXGroup;
+			children = (
+				0ED115871AD33CD7005A149D /* Pebble_BathroomTests.swift */,
+				0ED115851AD33CD7005A149D /* Supporting Files */,
+			);
+			path = "Pebble BathroomTests";
+			sourceTree = "<group>";
+		};
+		0ED115851AD33CD7005A149D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0ED115861AD33CD7005A149D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ED115701AD33CD7005A149D /* Pebble Bathroom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED1158B1AD33CD7005A149D /* Build configuration list for PBXNativeTarget "Pebble Bathroom" */;
+			buildPhases = (
+				0ED1156D1AD33CD7005A149D /* Sources */,
+				0ED1156E1AD33CD7005A149D /* Frameworks */,
+				0ED1156F1AD33CD7005A149D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pebble Bathroom";
+			productName = "Pebble Bathroom";
+			productReference = 0ED115711AD33CD7005A149D /* Pebble Bathroom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0ED115801AD33CD7005A149D /* Pebble BathroomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED1158E1AD33CD7005A149D /* Build configuration list for PBXNativeTarget "Pebble BathroomTests" */;
+			buildPhases = (
+				0ED1157D1AD33CD7005A149D /* Sources */,
+				0ED1157E1AD33CD7005A149D /* Frameworks */,
+				0ED1157F1AD33CD7005A149D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0ED115831AD33CD7005A149D /* PBXTargetDependency */,
+			);
+			name = "Pebble BathroomTests";
+			productName = "Pebble BathroomTests";
+			productReference = 0ED115811AD33CD7005A149D /* Pebble BathroomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ED115691AD33CD7005A149D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Kevin Conley";
+				TargetAttributes = {
+					0ED115701AD33CD7005A149D = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					0ED115801AD33CD7005A149D = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 0ED115701AD33CD7005A149D;
+					};
+				};
+			};
+			buildConfigurationList = 0ED1156C1AD33CD7005A149D /* Build configuration list for PBXProject "Pebble Bathroom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ED115681AD33CD7005A149D;
+			productRefGroup = 0ED115721AD33CD7005A149D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ED115701AD33CD7005A149D /* Pebble Bathroom */,
+				0ED115801AD33CD7005A149D /* Pebble BathroomTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ED1156F1AD33CD7005A149D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED115791AD33CD7005A149D /* Images.xcassets in Resources */,
+				0ED1159B1AD3CD55005A149D /* MainMenu.xib in Resources */,
+				0ED115951AD3413E005A149D /* bathroom-vacant@2x.png in Resources */,
+				0ED115941AD3413E005A149D /* bathroom-occupied@2x.png in Resources */,
+				0ED115971AD355FD005A149D /* bathroom-unknown@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED1157F1AD33CD7005A149D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ED1156D1AD33CD7005A149D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED115771AD33CD7005A149D /* AppDelegate.swift in Sources */,
+				0ED115991AD3C346005A149D /* DropdownMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ED1157D1AD33CD7005A149D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ED115881AD33CD7005A149D /* Pebble_BathroomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0ED115831AD33CD7005A149D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ED115701AD33CD7005A149D /* Pebble Bathroom */;
+			targetProxy = 0ED115821AD33CD7005A149D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ED115891AD33CD7005A149D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0ED1158A1AD33CD7005A149D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0ED1158C1AD33CD7005A149D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pebble Bathroom/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0ED1158D1AD33CD7005A149D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Pebble Bathroom/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0ED1158F1AD33CD7005A149D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pebble BathroomTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pebble Bathroom.app/Contents/MacOS/Pebble Bathroom";
+			};
+			name = Debug;
+		};
+		0ED115901AD33CD7005A149D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Pebble BathroomTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pebble Bathroom.app/Contents/MacOS/Pebble Bathroom";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ED1156C1AD33CD7005A149D /* Build configuration list for PBXProject "Pebble Bathroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED115891AD33CD7005A149D /* Debug */,
+				0ED1158A1AD33CD7005A149D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ED1158B1AD33CD7005A149D /* Build configuration list for PBXNativeTarget "Pebble Bathroom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED1158C1AD33CD7005A149D /* Debug */,
+				0ED1158D1AD33CD7005A149D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ED1158E1AD33CD7005A149D /* Build configuration list for PBXNativeTarget "Pebble BathroomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ED1158F1AD33CD7005A149D /* Debug */,
+				0ED115901AD33CD7005A149D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0ED115691AD33CD7005A149D /* Project object */;
+}
