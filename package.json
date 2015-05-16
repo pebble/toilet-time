@@ -1,0 +1,25 @@
+{
+  "name": "toilet-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pebble/toilet-time.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pebble/toilet-time/issues"
+  },
+  "homepage": "https://github.com/pebble/toilet-time",
+  "dependencies": {
+    "koa": "^0.20.0",
+    "koa-joi-router": "^1.3.1",
+    "pebble-api": "^0.2.1"
+  }
+}
