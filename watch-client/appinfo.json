@@ -1,0 +1,26 @@
+{
+    "appKeys": {
+        "message": 1,
+        "status": 0
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "lance@getpebble.com",
+    "longName": "Toilet Time",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "Toilet Time",
+    "targetPlatforms": [
+        "basalt"
+    ],
+    "uuid": "1987a5e9-9a91-410d-9e7a-20a8e84800fe",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false,
+        "hiddenApp": true
+    }
+}
