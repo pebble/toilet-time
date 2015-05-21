@@ -3,7 +3,7 @@
 #include <Ethernet.h>
 
 byte mac[] = { 0xDE, 0xAD, 0xBE, 0xEF, 0xCA, 0xFE };
-char serverName[] = "toilet-time.tools.getpebble.com";
+char serverName[] = "__HOST__";
 int serverPort = 80;
 char pathName[] = "/v1/update";
 const int lockPin = 2;

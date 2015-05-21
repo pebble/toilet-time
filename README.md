@@ -22,22 +22,55 @@ the "toilet-time" Topic. Watches with the watchapp installed subscribe to the
   * Switch of some kind
   * NodeJS capable web server
   * Pebble Time / Pebble Time Steel watches
+  * Pebble SDK installed
+  * Pebble Timeline API Key
 
 ## Setup
 
-  1. Upload firmware to Arduino
+  1. Install server dependencies
+
+      ```
+      cd timeline-server
+      npm install
+      ```
+
+  2. Start Server
+
+      ```
+      API_KEY="YOUR_API_KEY" npm start
+      ```
+
+  3. Adjust Arduino code to point at your server:
 
       ```
       cd lock-status
+      sed -i 's/__HOST__/YOUR-DOMAIN.com/g'
+      ```
+
+  4. Upload firmware to Arduino
+
+      ```
       arduino --upload lock-status.ino
       ```
 
-  2. Connect switch to +5v and Analog Input 2 on Arduino
+  5. Connect switch to +5v and Analog Input 2 on Arduino
 
-  3. Attach switch as such that it makes a circuit when door is locked
+  6. Attach switch as such that it makes a circuit when door is locked
 
-  4.  
+  7. Build Watchapp
 
+      ```
+      cd watch-client
+      pebble build
+      ```
+
+  8. Install Watchapp
+
+      ```
+      pebble install
+      ```
+
+  9. Enjoy watching your Timeline update when the lock status changes :D
 
 ## Notes
 
