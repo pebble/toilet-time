@@ -1,4 +1,4 @@
-#include "pebble.h";
+#include <pebble.h>
 
 static Window * window;
 
@@ -15,5 +15,5 @@ int main (void){
   init();
   app_event_loop();
   deinit();
-  return 0
+  return 0;
 }
