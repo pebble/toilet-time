@@ -10,6 +10,8 @@ app.use(logger());
 app.use(router.middleware());
 app.listen(8080);
 
+var bathroomStates = [0]
+
 router.route({
   method: 'post',
   path: '/v1/update',
@@ -25,7 +27,16 @@ function* newStatus() {
     this.body = 'You didn\'t send anything';
     return;
   }
+
+  this.body = 'success';
+
   var body = this.request.body;
+
+  if (body.locked == bathroomStates[body.id]) return;
+
+  console.log('Lock Status Changed. Sending Pin')
+
+  bathroomStates[body.id] = body.locked;
 
   var bathroomStatus;
   if (body.locked == 1){
@@ -54,5 +65,4 @@ function* newStatus() {
 
   });
 
-  this.body = 'success';
 }
