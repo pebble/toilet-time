@@ -1,15 +1,12 @@
 var router = require('koa-joi-router');
 var koa = require('koa');
 var Timeline = require('pebble-api');
-var timeline = new Timeline();
-var token = '---------------------'; 
+var timeline = new Timeline({ apiKey: process.env.API_KEY });
 var app = module.exports = koa();
 var router = router();
 
 app.use(router.middleware());
-app.listen(8080, function () {
-  console.log(arguments);
-});
+app.listen(8080);
 
 router.route({
   method: 'post',
@@ -17,9 +14,7 @@ router.route({
   validate: {
     type: 'json'
   },
-  handler: [
-    newStatus
-  ]
+  handler: [ newStatus ]
 });
 
 function* newStatus() {
@@ -30,6 +25,13 @@ function* newStatus() {
   }
   var body = this.request.body;
 
+  var bathroomStatus;
+  if (body.locked == 0){
+    bathroomStatus = 'Occupied';
+  } else {
+    bathroomStatus = 'Vacant';
+  }
+
   yield new Promise(function(resolve, reject) {
 
     var pin = new Timeline.Pin({
@@ -39,20 +41,16 @@ function* newStatus() {
       layout: new Timeline.Pin.Layout({
         type: Timeline.Pin.LayoutType.GENERIC_PIN,
         tinyIcon: Timeline.Pin.Icon.NOTIFICATION_FLAG,
-        title: 'Bathroom Status'
+        title: 'Bathroom ' + bathroomStatus
       })
     });
     
-    timeline.sendUserPin(token, pin, function (err) {
-         if (err) {
-           reject(err);
-         }
-        resolve();
-      console.log('Pin sent successfully!');
+    timeline.sendSharedPin(['toilet-time'], pin, function (err) {
+      if (err) { reject(err) }
+      resolve();
     });
-
   });
 
-  console.log('%j', this.request.body);
+  //console.log('%j', this.request.body);
 }
 
