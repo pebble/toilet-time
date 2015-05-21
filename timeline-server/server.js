@@ -1,10 +1,12 @@
 var router = require('koa-joi-router');
+var logger = require('koa-logger')
 var koa = require('koa');
 var Timeline = require('pebble-api');
 var timeline = new Timeline({ apiKey: process.env.API_KEY });
 var app = module.exports = koa();
 var router = router();
 
+app.use(logger());
 app.use(router.middleware());
 app.listen(8080);
 
@@ -26,7 +28,7 @@ function* newStatus() {
   var body = this.request.body;
 
   var bathroomStatus;
-  if (body.locked == 0){
+  if (body.locked == 1){
     bathroomStatus = 'Occupied';
   } else {
     bathroomStatus = 'Vacant';
@@ -49,8 +51,8 @@ function* newStatus() {
       if (err) { reject(err) }
       resolve();
     });
+
   });
 
-  //console.log('%j', this.request.body);
+  this.body = 'success';
 }
-

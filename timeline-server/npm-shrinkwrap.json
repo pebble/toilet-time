@@ -376,6 +376,28 @@
         }
       }
     },
+    "koa-logger": {
+      "version": "1.2.2",
+      "from": "koa-logger@*",
+      "resolved": "https://registry.npmjs.org/koa-logger/-/koa-logger-1.2.2.tgz",
+      "dependencies": {
+        "passthrough-counter": {
+          "version": "0.0.1",
+          "from": "passthrough-counter@>=0.0.1 <0.1.0",
+          "resolved": "https://registry.npmjs.org/passthrough-counter/-/passthrough-counter-0.0.1.tgz"
+        },
+        "humanize-number": {
+          "version": "0.0.2",
+          "from": "humanize-number@>=0.0.1 <0.1.0",
+          "resolved": "https://registry.npmjs.org/humanize-number/-/humanize-number-0.0.2.tgz"
+        },
+        "bytes": {
+          "version": "1.0.0",
+          "from": "bytes@>=1.0.0 <2.0.0",
+          "resolved": "https://registry.npmjs.org/bytes/-/bytes-1.0.0.tgz"
+        }
+      }
+    },
     "pebble-api": {
       "version": "0.2.1",
       "from": "pebble-api@>=0.2.1 <0.3.0",
