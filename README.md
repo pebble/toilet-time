@@ -44,7 +44,7 @@ the "toilet-time" Topic. Watches with the watchapp installed subscribe to the
 
       ```
       cd lock-status
-      sed -i 's/__HOST__/YOUR-DOMAIN.com/g'
+      sed 's/__HOST__/YOUR-DOMAIN.com/g' -i lock-status.ino
       ```
 
   4. Upload firmware to Arduino
