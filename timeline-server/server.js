@@ -4,6 +4,7 @@ var koa = require('koa');
 var Timeline = require('pebble-api');
 var timeline = new Timeline({ apiKey: process.env.API_KEY });
 var app = module.exports = koa();
+var Joi = require('joi');
 var router = router();
 
 app.use(logger());
@@ -16,7 +17,11 @@ router.route({
   method: 'post',
   path: '/v1/update',
   validate: {
-    type: 'json'
+    type: 'json',
+    body: {
+      id: Joi.number().integer().greater(-1).less(2),
+      locked: Joi.number().integer().greater(-1).less(2)
+    }
   },
   handler: [ newStatus ]
 });
