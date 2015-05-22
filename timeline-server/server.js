@@ -59,7 +59,7 @@ function* newStatus() {
     });
     
     timeline.sendSharedPin(['toilet-time'], pin, function (err) {
-      if (err) { reject(err) }
+      if (err) { reject(err); return }
       resolve();
     });
 
